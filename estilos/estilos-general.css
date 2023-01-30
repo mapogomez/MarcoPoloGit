@@ -1,0 +1,283 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position:absolute;
+    top: 110px;
+    right: 0;
+}
+nav li {
+    display : inline-block;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+.productos {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    padding: 50px;
+}
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+
+    /*border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    
+    border puede reemplazar esta 3 propiedades
+    primero el width, luego style por ultimo color*/
+
+    border-radius: 10px;
+
+    /*border-top-left-radius: 25px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 10px;
+    
+    Con estas opciones podemos redondear bordes de los rectangulos por cada uno de las esquinas con un radio de circunferencia diferente por lado del rectangulo
+    Con la opcion border-radius podemos configurar todos los extremos del rectangulo, empezando por el extremo superior izquierdo y siguiendo las manijas del reloj.*/
+}
+
+.productos li:hover {
+    border-color: #C78C19;
+}
+
+.productos li:hover h2 {
+    font-size: 33px;
+}
+
+.productos li:active {
+    border-color: #088C19;
+}
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productoDescripcion {
+    font-size: 18px;
+}
+
+.productoPrecio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(../imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.inputPadron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+}
+
+.enviar:hover {
+    background: red;
+    cursor: pointer;
+    color: blue;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 40px 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/*A partir de aca será CSS exclusivo para la pagina home*/
+
+.banner {
+    width: 100%;
+}
+
+.tituloPrincipal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal {
+    background: #FEFEFE;
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.tituloPrincipal:first-letter {
+    font-weight: bold;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.principal em strong {
+    color: red;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-contenido {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales {
+    padding: 3em 0;
+    background: #888888;
+}
+.contenidoDiferenciales {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.listaDiferenciales {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items {
+    line-height: 1.5;
+}
+
+.items:before {
+    content: "\2605";
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+.imagenDiferenciales {
+    width: 60%;
+    box-shadow: 10px 10px 20px 10px ;
+}
+
+.imagenDiferenciales:hover {
+    opacity: 50%;
+    transition: 500ms;
+
+}
+
+.video {
+    width: 560px;
+    margin: 3ex auto;
+}
+
+@media screen and (max-width:480px) {
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenidoDiferenciales, .video {
+        width: auto;
+    }
+
+    .listaDiferenciales, .imagenDiferenciales {
+        width: 100%;
+    }
+}
